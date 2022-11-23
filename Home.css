@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 30px;
+}
+.main {
+    padding: 15px;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns:repeat(12, 1fr) ;
+    grid-template-rows: 60px 1fr 60px;
+    gap: 5px;
+    height: 100vh;
+}
+.main div {
+    background-color: blueviolet;
+    border: 1px solid #fff;
+    padding: 15px;
+    text-align: center;
+}
+.header {
+    grid-column: 1/-1;
+}
+.sidebar {
+    grid-column: 1/4;
+}
+.content {
+    grid-column-start: 4;
+    grid-column-end: -1;
+}
+.footer {
+    grid-column: 1/-1;
+}

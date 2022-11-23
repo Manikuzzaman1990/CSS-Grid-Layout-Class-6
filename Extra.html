@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-size: 32px;
+        }
+        .main {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 5px;
+            grid-template-areas: 
+            "a a a b b b b b b a2 a2 a2"
+            "a a a b2 b2 b2 b2 b2 b2 a2 a2 a2"
+            "c c c c c c c c c d d d"
+            "b3 b3 b3 b3 b3 b3 b4 b4 b4 b4 b4 b4"
+            "e e e e e e e e e e e e"
+        }
+        .one {
+            grid-area: a;
+        }
+        .two {
+            grid-area: b;
+        }
+        .three {
+            grid-area: a2;
+        }
+        .four {
+            grid-area: b2;
+        }
+        .five {
+            grid-area: c;
+        }
+        .six {
+            grid-area: d;
+        }
+        .seven {
+            grid-area: b3;
+        }
+        .eight {
+            grid-area: b4;
+        }
+        .nine {
+            grid-area: e;
+        }
+        .main div {
+            border: 1px solid #999;
+            padding: 30px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+        <div class="seven">7</div> 
+        <div class="eight">8</div>
+        <div class="nine">9</div>
+    </div>
+</body>
+</html>
